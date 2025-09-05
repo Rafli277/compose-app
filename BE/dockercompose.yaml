@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  backend-js:
+    image: rafli27/backend-js:latest
+    container_name: backend-js-app
+    ports:
+      - '3000:3000'
+
+networks:
+  backend-network:
+    driver: bridge

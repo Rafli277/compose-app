@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fe-js:
+    image: rafli27/frontend-react:latest
+    container_name: fe-js-app
+    ports:
+      - '3000:80'
+
+networks:
+  fe-network:
+    driver: bridge
